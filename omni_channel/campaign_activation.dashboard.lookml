@@ -5,7 +5,7 @@
   elements:
   - title: Predicted High CLV Customers
     name: Predicted High CLV Customers
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: looker_grid
     fields: [c360.customer_id, customers.name, customers.email, customers.address,
@@ -131,7 +131,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     listens_to_filters: []
     field: c360.customer_type
@@ -144,7 +144,7 @@
     ui_config:
       type: button_toggles
       display: inline
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     listens_to_filters: []
     field: c360.has_visited_website
@@ -157,7 +157,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     listens_to_filters: []
     field: c360.acquisition_source
@@ -170,7 +170,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     listens_to_filters: []
     field: omni_channel_transactions__transaction_details.product_category
@@ -183,7 +183,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     listens_to_filters: []
     field: omni_channel_transactions.offer_type
@@ -199,7 +199,7 @@
       options:
         min: 0
         max: 100
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     listens_to_filters: []
     field: c360.risk_of_churn_100
@@ -215,7 +215,7 @@
       options:
         min: 0
         max: 10
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     listens_to_filters: []
     field: c360.transaction_count

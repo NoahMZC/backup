@@ -4,7 +4,7 @@ view: omni_channel_support_calls {
     sql:
     SELECT * except(client_id)
     , cast(round(rand()*60000+25000,0) as INT64) as client_id
-    FROM `looker-private-demo.call_center.transcript_with_messages`
+    FROM `mzcdsc-team-200716.Looker_Demo_call_center.transcript_with_messages`
  ;;
   }
 

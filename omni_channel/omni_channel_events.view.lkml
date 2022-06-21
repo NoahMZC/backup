@@ -22,7 +22,7 @@ view: omni_channel_events {
     ,URI
     ,EVENT_TYPE
     ,CREATED_AT
-    FROM `looker-private-demo.ecomm.events`
+    FROM `mzcdsc-team-200716.Looker_Demo_ecomm.events`
     WHERE USER_ID >= 30000
     ;;
   }

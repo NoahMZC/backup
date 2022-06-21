@@ -5,7 +5,7 @@
   elements:
   - title: Customer Location
     name: Customer Location
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: looker_geo_coordinates
     fields: [customers.location, c360.customer_count]
@@ -48,7 +48,7 @@
     height: 8
   - title: Customer Info
     name: Customer Info
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: looker_single_record
     fields: [customers.id, customers.name, customers.registered_date, customers.email,
@@ -84,7 +84,7 @@
     height: 6
   - title: Lifetime Purchases
     name: Lifetime Purchases
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: single_value
     fields: [c360.transaction_count]
@@ -141,7 +141,7 @@
     height: 2
   - title: Lifetime Returns
     name: Lifetime Returns
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: single_value
     fields: [c360.return_count]
@@ -193,7 +193,7 @@
     height: 2
   - title: Total Sales
     name: Total Sales
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: single_value
     fields: [c360.total_sales]
@@ -245,7 +245,7 @@
     height: 2
   - title: Predicted CLV
     name: Predicted CLV
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: single_value
     fields: [c360.predicted_clv]
@@ -297,7 +297,7 @@
     height: 2
   - title: Churn Risk
     name: Churn Risk
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: single_value
     fields: [c360.risk_of_churn]
@@ -349,7 +349,7 @@
     height: 2
   - title: Order History
     name: Order History
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: looker_grid
     fields: [omni_channel_transactions.transaction_date, omni_channel_transactions.transaction_id,
@@ -392,7 +392,7 @@
   - name: Customer Timeline
     title: Customer Timeline
     merged_queries:
-    - model: omni_channel
+    - model: Looker_Demo_omni_channel
       explore: omni_channel_transactions
       type: table
       fields: [omni_channel_transactions.transaction_date, omni_channel_transactions.transaction_count]
@@ -400,7 +400,7 @@
       limit: 500
       query_timezone: America/Los_Angeles
       join_fields: []
-    - model: omni_channel
+    - model: Looker_Demo_omni_channel
       explore: omni_channel_events
       type: table
       fields: [omni_channel_events.session_count, omni_channel_events.created_date]
@@ -410,7 +410,7 @@
       join_fields:
       - field_name: omni_channel_events.created_date
         source_field_name: omni_channel_transactions.transaction_date
-    - model: omni_channel
+    - model: Looker_Demo_omni_channel
       explore: omni_channel_support_calls
       type: table
       fields: [omni_channel_support_calls.conversation_start_date, omni_channel_support_calls.count]
@@ -472,7 +472,7 @@
     default_value: '81359'
     allow_multiple_values: true
     required: false
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: customer_transaction_fact
     listens_to_filters: []
     field: customer_event_fact.customer_id

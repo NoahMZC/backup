@@ -61,13 +61,13 @@ view: omni_channel_transactions {
         products.NAME  AS product_name,
         products.SKU  AS product_sku,
         products.DEPARTMENT  AS product_department,
-      FROM `looker-private-demo.retail.transaction_detail`  AS transactions
+      FROM `mzcdsc-team-200716.Looker_Demo_retail.transaction_detail`  AS transactions
       LEFT JOIN UNNEST((
           transactions.line_items
       )) as transactions__line_items
-      LEFT JOIN `looker-private-demo.retail.products`  AS products ON products.ID = transactions__line_items.product_id
-      LEFT JOIN `looker-private-demo.retail.us_stores` AS stores ON stores.ID = transactions.store_id
-      LEFT JOIN `looker-private-demo.retail.channels`  AS channels ON channels.ID = transactions.channel_id
+      LEFT JOIN `mzcdsc-team-200716.Looker_Demo_retail.products`  AS products ON products.ID = transactions__line_items.product_id
+      LEFT JOIN `mzcdsc-team-200716.Looker_Demo_retail.us_stores` AS stores ON stores.ID = transactions.store_id
+      LEFT JOIN `mzcdsc-team-200716.Looker_Demo_retail.channels`  AS channels ON channels.ID = transactions.channel_id
 
       UNION ALL
 
@@ -102,13 +102,13 @@ view: omni_channel_transactions {
       products.NAME  AS product_name,
       products.SKU  AS product_sku,
       products.DEPARTMENT  AS product_department,
-      FROM `looker-private-demo.retail.transaction_detail`  AS transactions
+      FROM `mzcdsc-team-200716.Looker_Demo_retail.transaction_detail`  AS transactions
       LEFT JOIN UNNEST((
       transactions.line_items
       )) as transactions__line_items
-      LEFT JOIN `looker-private-demo.retail.products`  AS products ON products.ID = transactions__line_items.product_id
-      LEFT JOIN `looker-private-demo.retail.us_stores` AS stores ON stores.ID = transactions.store_id
-      LEFT JOIN `looker-private-demo.retail.channels`  AS channels ON channels.ID = transactions.channel_id
+      LEFT JOIN `mzcdsc-team-200716.Looker_Demo_retail.products`  AS products ON products.ID = transactions__line_items.product_id
+      LEFT JOIN `mzcdsc-team-200716.Looker_Demo_retail.us_stores` AS stores ON stores.ID = transactions.store_id
+      LEFT JOIN `mzcdsc-team-200716.Looker_Demo_retail.channels`  AS channels ON channels.ID = transactions.channel_id
       WHERE channels.NAME not in ('In-store Self-checkout','In-store Tills')
 
       UNION ALL
@@ -144,13 +144,13 @@ view: omni_channel_transactions {
       products.NAME  AS product_name,
       products.SKU  AS product_sku,
       products.DEPARTMENT  AS product_department,
-      FROM `looker-private-demo.retail.transaction_detail`  AS transactions
+      FROM `mzcdsc-team-200716.Looker_Demo_retail.transaction_detail`  AS transactions
       LEFT JOIN UNNEST((
       transactions.line_items
       )) as transactions__line_items
-      LEFT JOIN `looker-private-demo.retail.products`  AS products ON products.ID = transactions__line_items.product_id
-      LEFT JOIN `looker-private-demo.retail.us_stores` AS stores ON stores.ID = transactions.store_id
-      LEFT JOIN `looker-private-demo.retail.channels`  AS channels ON channels.ID = transactions.channel_id
+      LEFT JOIN `mzcdsc-team-200716.Looker_Demo_retail.products`  AS products ON products.ID = transactions__line_items.product_id
+      LEFT JOIN `mzcdsc-team-200716.Looker_Demo_retail.us_stores` AS stores ON stores.ID = transactions.store_id
+      LEFT JOIN `mzcdsc-team-200716.Looker_Demo_retail.channels`  AS channels ON channels.ID = transactions.channel_id
       WHERE channels.NAME in ('In-store Self-checkout','In-store Tills') AND ((transactions.transaction_timestamp  < (TIMESTAMP(FORMAT_TIMESTAMP('%F %H:%M:%E*S', TIMESTAMP('2020-03-14 00:00:00')), 'America/Los_Angeles'))))
 
       UNION ALL
@@ -182,10 +182,10 @@ view: omni_channel_transactions {
       TRIM(products.name)  AS product_name,
       products.sku  AS product_sku,
       TRIM(products.department)  AS products_department
-      FROM looker-private-demo.ecomm.order_items  AS order_items
-      FULL OUTER JOIN looker-private-demo.ecomm.inventory_items  AS inventory_items ON inventory_items.id = order_items.inventory_item_id
-      LEFT JOIN looker-private-demo.ecomm.users  AS users ON order_items.user_id = users.id
-      LEFT JOIN looker-private-demo.ecomm.products  AS products ON products.id = inventory_items.product_id
+      FROM mzcdsc-team-200716.Looker_Demo_ecomm.order_items  AS order_items
+      FULL OUTER JOIN mzcdsc-team-200716.Looker_Demo_ecomm.inventory_items  AS inventory_items ON inventory_items.id = order_items.inventory_item_id
+      LEFT JOIN mzcdsc-team-200716.Looker_Demo_ecomm.users  AS users ON order_items.user_id = users.id
+      LEFT JOIN mzcdsc-team-200716.Looker_Demo_ecomm.products  AS products ON products.id = inventory_items.product_id
       WHERE users.country = 'USA'
 
       UNION ALL
@@ -217,10 +217,10 @@ view: omni_channel_transactions {
       TRIM(products.name)  AS product_name,
       products.sku  AS product_sku,
       TRIM(products.department)  AS products_department
-      FROM looker-private-demo.ecomm.order_items  AS order_items
-      FULL OUTER JOIN looker-private-demo.ecomm.inventory_items  AS inventory_items ON inventory_items.id = order_items.inventory_item_id
-      LEFT JOIN looker-private-demo.ecomm.users  AS users ON order_items.user_id = users.id
-      LEFT JOIN looker-private-demo.ecomm.products  AS products ON products.id = inventory_items.product_id
+      FROM mzcdsc-team-200716.Looker_Demo_ecomm.order_items  AS order_items
+      FULL OUTER JOIN mzcdsc-team-200716.Looker_Demo_ecomm.inventory_items  AS inventory_items ON inventory_items.id = order_items.inventory_item_id
+      LEFT JOIN mzcdsc-team-200716.Looker_Demo_ecomm.users  AS users ON order_items.user_id = users.id
+      LEFT JOIN mzcdsc-team-200716.Looker_Demo_ecomm.products  AS products ON products.id = inventory_items.product_id
       WHERE
       (order_items.created_at  >= TIMESTAMP(FORMAT_TIMESTAMP('%F %H:%M:%E*S', TIMESTAMP('2020-03-13 00:00:00')), 'America/Los_Angeles')) AND users.country = 'USA'
       )

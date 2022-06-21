@@ -5,7 +5,7 @@
   elements:
   - title: Transaction Count by Channel
     name: Transaction Count by Channel
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: looker_area
     fields: [omni_channel_transactions.transaction_month, omni_channel_transactions.transaction_count,
@@ -64,7 +64,7 @@
     height: 9
   - title: In-Store and Online
     name: In-Store and Online
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: single_value
     fields: [c360.customer_count]
@@ -125,7 +125,7 @@
     height: 2
   - title: RFV
     name: RFV
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: treemap
     fields: [c360.customer_count, c360.rfm_rating]
@@ -181,7 +181,7 @@
     height: 9
   - title: Recency
     name: Recency
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: single_value
     fields: [c360.high_recency_customers, c360.customer_count, c360.low_recency_customers,
@@ -241,7 +241,7 @@
     height: 3
   - title: Frequency
     name: Frequency
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: single_value
     fields: [c360.high_recency_customers, c360.low_recency_customers, c360.high_frequency_customers,
@@ -301,7 +301,7 @@
     height: 3
   - title: Value
     name: Value
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: single_value
     fields: [c360.high_recency_customers, c360.low_recency_customers, c360.high_frequency_customers,
@@ -362,7 +362,7 @@
     height: 3
   - title: Customer Behavior by Acquisition Source
     name: Customer Behavior by Acquisition Source
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_events
     type: looker_column
     fields: [delivery_only, in_store_only, in_store_and_online, pickup_only, omni_channel_events.traffic_source]
@@ -424,7 +424,7 @@
     height: 8
   - title: Sales YoY
     name: Sales YoY
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: looker_line
     fields: [omni_channel_transactions__transaction_details.total_sales, omni_channel_transactions.transaction_month_name,
@@ -481,7 +481,7 @@
     height: 9
   - title: New Customers
     name: New Customers
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: single_value
     fields: [c360.customer_count]
@@ -508,7 +508,7 @@
     height: 3
   - title: Transactions
     name: Transactions
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: single_value
     fields: [omni_channel_transactions.transaction_count, omni_channel_transactions.reporting_period]
@@ -538,7 +538,7 @@
     height: 3
   - title: Sales by Channel
     name: Sales by Channel
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: looker_pie
     fields: [c360.customer_type, omni_channel_transactions__transaction_details.total_sales]
@@ -596,7 +596,7 @@
     height: 9
   - title: Profitability and CLV by Channel
     name: Profitability and CLV by Channel
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: looker_column
     fields: [c360.customer_type, c360.customer_count, omni_channel_transactions__transaction_details.profit_margin,
@@ -656,7 +656,7 @@
     height: 9
   - title: In Store Customers
     name: In Store Customers
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: single_value
     fields: [c360.customer_count]
@@ -681,7 +681,7 @@
     height: 3
   - title: Online Customers
     name: Online Customers
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: single_value
     fields: [c360.customer_count]
@@ -706,7 +706,7 @@
     height: 3
   - title: LTV by Channel
     name: LTV by Channel
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: looker_line
     fields: [c360.months_since_first_purchase, c360.customer_count, omni_channel_transactions__transaction_details.total_sales,
@@ -767,7 +767,7 @@
     height: 9
   - title: LTV by Acquisition Source
     name: LTV by Acquisition Source
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: looker_line
     fields: [c360.months_since_first_purchase, c360.customer_count, omni_channel_transactions__transaction_details.total_sales,
@@ -821,7 +821,7 @@
     height: 8
   - title: Acquisition Source
     name: Acquisition Source
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: looker_donut_multiples
     fields: [c360.acquisition_source, c360.customer_count, c360.customer_type]
@@ -869,7 +869,7 @@
     height: 8
   - title: Website Activity by Traffic Source
     name: Website Activity by Traffic Source
-    model: omni_channel
+    model: Looker_Demo_omni_channel
     explore: omni_channel_transactions
     type: looker_column
     fields: [c360.acquisition_source, session_count, cart_adds, purchases]

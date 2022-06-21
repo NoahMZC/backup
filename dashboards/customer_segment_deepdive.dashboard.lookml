@@ -4,7 +4,7 @@
   elements:
   - title: Customer Coverage
     name: Customer Coverage
-    model: retail_block_model
+    model: Looker_Demo_retail_block_model
     explore: transactions
     type: looker_map
     fields: [customers.location, transactions__line_items.total_sales]
@@ -49,7 +49,7 @@
     height: 8
   - title: Sales
     name: Sales
-    model: retail_block_model
+    model: Looker_Demo_retail_block_model
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -87,7 +87,7 @@
     height: 4
   - title: Transactions
     name: Transactions
-    model: retail_block_model
+    model: Looker_Demo_retail_block_model
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -125,7 +125,7 @@
     height: 4
   - title: Basket Size
     name: Basket Size
-    model: retail_block_model
+    model: Looker_Demo_retail_block_model
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -163,7 +163,7 @@
     height: 4
   - title: Quantity
     name: Quantity
-    model: retail_block_model
+    model: Looker_Demo_retail_block_model
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -201,7 +201,7 @@
     height: 4
   - title: Customer Segment
     name: Customer Segment
-    model: retail_block_model
+    model: Looker_Demo_retail_block_model
     explore: transactions
     type: single_value
     fields: [customer_clustering_prediction.customer_segment]
@@ -232,7 +232,7 @@
     height: 6
   - title: Potential Value from 10% Reactivation
     name: Potential Value from 10% Reactivation
-    model: retail_block_model
+    model: Looker_Demo_retail_block_model
     explore: transactions
     type: single_value
     fields: [transactions__line_items.total_sales]
@@ -323,7 +323,7 @@
     height: 8
   - title: Customers for Reactivation Campaign
     name: Customers for Reactivation Campaign
-    model: retail_block_model
+    model: Looker_Demo_retail_block_model
     explore: transactions
     type: looker_grid
     fields: [customer_facts.customer_id, customer_facts.customer_spend_trend_past_year,
@@ -372,7 +372,7 @@
     default_value: Emerging Millennials 🥑
     allow_multiple_values: false
     required: true
-    model: retail_block_model
+    model: Looker_Demo_retail_block_model
     explore: transactions
     listens_to_filters: []
     field: customer_clustering_prediction.customer_segment
