@@ -1,4 +1,4 @@
-- dashboard: '2___'
+- dashboard: 'group_overview_ko'
   title: 2_매장 판매 현황
   layout: newspaper
   preferred_viewer: dashboards
