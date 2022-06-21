@@ -1,4 +1,4 @@
-- dashboard: '3___'
+- dashboard: 'item_affinity_analysis_ko'
   title: 3_제품 판매 현황
   layout: newspaper
   preferred_viewer: dashboards
