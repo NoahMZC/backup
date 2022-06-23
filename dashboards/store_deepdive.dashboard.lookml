@@ -189,7 +189,7 @@
       transactions.transaction_date: 2 years
       transactions.comparison_type: year
       transactions.selected_comparison: "-NULL"
-      customer_clustering_prediction.customer_segment: Emerging Millennials ?
+      customer_clustering_prediction.customer_segment: Emerging Millennials 🥑
     sorts: [transactions.selected_comparison desc]
     limit: 500
     column_limit: 50
@@ -226,7 +226,7 @@
       transactions.transaction_date: 2 years
       transactions.comparison_type: year
       transactions.selected_comparison: "-NULL"
-      customer_clustering_prediction.customer_segment: Regular Gen Xers ?
+      customer_clustering_prediction.customer_segment: Regular Gen Xers 🛒
     sorts: [transactions.selected_comparison desc]
     limit: 500
     column_limit: 50
@@ -263,7 +263,7 @@
       transactions.transaction_date: 2 years
       transactions.comparison_type: year
       transactions.selected_comparison: "-NULL"
-      customer_clustering_prediction.customer_segment: One-off locals ?
+      customer_clustering_prediction.customer_segment: One-off locals 🏪
     sorts: [transactions.selected_comparison desc]
     limit: 500
     column_limit: 50
@@ -303,7 +303,7 @@
       transactions.transaction_date: 2 years
       transactions.comparison_type: year
       transactions.selected_comparison: "-NULL"
-      customer_clustering_prediction.customer_segment: Affluent Retirees ?
+      customer_clustering_prediction.customer_segment: Affluent Retirees 👴
     sorts: [transactions.selected_comparison desc]
     limit: 500
     column_limit: 50
