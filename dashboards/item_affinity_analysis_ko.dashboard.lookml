@@ -631,7 +631,7 @@
 
         <a style="padding: 5px 15px; border-top: solid 1px #4285F4; border-left: solid 1px #4285F4; border-right: solid 1px #4285F4; border-radius: 5px 5px 0 0; float: left; line-height: 40px; font-weight: bold; background-color: #eaf1fe;"  href="/dashboards/Looker_Demo_retail_block_model::item_affinity_analysis_ko?Product+Level=product&Analysis+Timeframe=90+days&Focus+Product=&Focus+Category=&Minimum+Purchase+Frequency=%3E%3D0.005">3_제품 판매 현황</a>
 
-        <a style="padding: 5px 15px; border-bottom: solid 1px #4285F4; float: left; line-height: 40px;"   href="https://megazonepartner.cloud.looker.com/dashboards/Looker_Demo_call_center::agent_performance?Agent=Tonya+Koop">4_상담원 평가</a>
+        <a style="padding: 5px 15px; border-bottom: solid 1px #4285F4; float: left; line-height: 40px;"   href="https://megazonepartner.cloud.looker.com/dashboards/Looker_Demo_call_center::4__?%EC%83%81%EB%8B%B4%EC%9B%90+%EB%AA%85=Tonya+Koop&%EA%B8%B0%EA%B0%84=2022%2F01%2F01+to+2022%2F06%2F21">4_상담원 평가</a>
 
       </nav>
 
