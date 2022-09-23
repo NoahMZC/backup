@@ -238,7 +238,7 @@ view: order_items_base {
         url: "https://megazonepartner.cloud.looker.com/dashboards/239?Product%20Level=product&Analysis%20Timeframe=1%20year&Focus+Product={{ value | encode_uri }}&&Focus%20Category=&Minimum%20Purchase%20Frequency=>%3D0.005"
       }
     }
-    # 원 uRL/dashboards/Ipxk660N88jaUxsHolxRts?Focus%20Product={{ value | encode_uri }}&Product%20Level={{ _filters['order_items_base.product_level'] | url_encode }}&Analysis%20Timeframe={{ _filters['order_purchase_affinity.affinity_timeframe'] | url_encode }}&Store%20Name={{ _filters['order_purchase_affinity.store_name'] | url_encode }}&Focus%20Category={{ _filters['order_purchase_affinity.product_a_category'] | url_encode }}&Minimum%20Purchase%20Frequency={{ _filters['order_purchase_affinity.product_a_order_frequency'] | url_encode }}"
+    # 원 url /dashboards/Ipxk660N88jaUxsHolxRts?Focus%20Product={{ value | encode_uri }}&Product%20Level={{ _filters['order_items_base.product_level'] | url_encode }}&Analysis%20Timeframe={{ _filters['order_purchase_affinity.affinity_timeframe'] | url_encode }}&Store%20Name={{ _filters['order_purchase_affinity.store_name'] | url_encode }}&Focus%20Category={{ _filters['order_purchase_affinity.product_a_category'] | url_encode }}&Minimum%20Purchase%20Frequency={{ _filters['order_purchase_affinity.product_a_order_frequency'] | url_encode }}"
 
     dimension: product_a_image {
       group_label: "Product A"
