@@ -785,7 +785,7 @@
   - name: 기간
     title: 기간
     type: date_filter
-    default_value: 7 day
+    default_value: 2 years
     allow_multiple_values: true
     required: false
     ui_config:
