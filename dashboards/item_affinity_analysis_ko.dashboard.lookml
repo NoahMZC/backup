@@ -657,7 +657,7 @@
   - name: Analysis Timeframe
     title: Analysis Timeframe
     type: date_filter
-    default_value: 90 day
+    default_value: 1 years
     allow_multiple_values: true
     required: false
     ui_config:
