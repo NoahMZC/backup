@@ -476,47 +476,47 @@
     col: 0
     width: 6
     height: 4
-  - title: Regular Gen Xers 🛒
-    name: Regular Gen Xers 🛒
-    model: Looker_Demo_retail_block_model
-    explore: transactions
-    type: single_value
-    fields: [transactions.selected_comparison, transactions__line_items.total_sales,
-      transactions.number_of_transactions, transactions__line_items.average_basket_size]
-    filters:
-      transactions.transaction_date: 2 years
-      transactions.comparison_type: year
-      transactions.selected_comparison: "-NULL"
-      customer_clustering_prediction.customer_segment: Regular Gen Xers%
-    sorts: [transactions.selected_comparison desc]
-    limit: 500
-    column_limit: 50
-    dynamic_fields: [{table_calculation: vs_ly, label: vs LY, expression: "${transactions__line_items.total_sales}/offset(${transactions__line_items.total_sales},1)-1",
-        value_format: !!null '', value_format_name: percent_1, _kind_hint: measure,
-        _type_hint: number}]
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: true
-    comparison_type: change
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    custom_color: "#5A30C2"
-    single_value_title: 중장년층
-    conditional_formatting: [{type: equal to, value: !!null '', background_color: "#4285F4",
-        font_color: !!null '', color_application: {collection_id: google, palette_id: google-sequential-0},
-        bold: false, italic: false, strikethrough: false, fields: !!null ''}]
-    series_types: {}
-    hidden_fields: [transactions.number_of_transactions, transactions__line_items.average_basket_size]
-    defaults_version: 1
-    listen:
-      기간: transactions.date_comparison_filter
-    row: 38
-    col: 6
-    width: 6
-    height: 4
+  # - title: Regular Gen Xers 🛒
+  #   name: Regular Gen Xers 🛒
+  #   model: Looker_Demo_retail_block_model
+  #   explore: transactions
+  #   type: single_value
+  #   fields: [transactions.selected_comparison, transactions__line_items.total_sales,
+  #     transactions.number_of_transactions, transactions__line_items.average_basket_size]
+  #   filters:
+  #     transactions.transaction_date: 2 years
+  #     transactions.comparison_type: year
+  #     transactions.selected_comparison: "-NULL"
+  #     customer_clustering_prediction.customer_segment: Regular Gen Xers%
+  #   sorts: [transactions.selected_comparison desc]
+  #   limit: 500
+  #   column_limit: 50
+  #   dynamic_fields: [{table_calculation: vs_ly, label: vs LY, expression: "${transactions__line_items.total_sales}/offset(${transactions__line_items.total_sales},1)-1",
+  #       value_format: !!null '', value_format_name: percent_1, _kind_hint: measure,
+  #       _type_hint: number}]
+  #   custom_color_enabled: true
+  #   show_single_value_title: true
+  #   show_comparison: true
+  #   comparison_type: change
+  #   comparison_reverse_colors: false
+  #   show_comparison_label: true
+  #   enable_conditional_formatting: false
+  #   conditional_formatting_include_totals: false
+  #   conditional_formatting_include_nulls: false
+  #   custom_color: "#5A30C2"
+  #   single_value_title: 중장년층
+  #   conditional_formatting: [{type: equal to, value: !!null '', background_color: "#4285F4",
+  #       font_color: !!null '', color_application: {collection_id: google, palette_id: google-sequential-0},
+  #       bold: false, italic: false, strikethrough: false, fields: !!null ''}]
+  #   series_types: {}
+  #   hidden_fields: [transactions.number_of_transactions, transactions__line_items.average_basket_size]
+  #   defaults_version: 1
+  #   listen:
+  #     기간: transactions.date_comparison_filter
+  #   row: 38
+  #   col: 6
+  #   width: 6
+  #   height: 4
   - title: One-off locals 🏪
     name: One-off locals 🏪
     model: Looker_Demo_retail_block_model
@@ -770,7 +770,7 @@
 
         <a style="padding: 5px 15px; border-top: solid 1px #4285F4; border-left: solid 1px #4285F4; border-right: solid 1px #4285F4; border-radius: 5px 5px 0 0; float: left; line-height: 40px; font-weight: bold; background-color: #eaf1fe;"   href="https://megazonepartner.cloud.looker.com/dashboards/Looker_Demo_retail_block_model::group_overview_ko?%EA%B8%B0%EA%B0%84=7+days">2_매장 판매 현황</a>
 
-        <a style="padding: 5px 15px; border-bottom: solid 1px #4285F4; float: left; line-height: 40px;"   href="/dashboards/Looker_Demo_retail_block_model::item_affinity_analysis_ko?Product+Level=product&Analysis+Timeframe=90+days&Focus+Product=&Focus+Category=&Minimum+Purchase+Frequency=%3E%3D0.005">3_제품 판매 현황</a>
+        <a style="padding: 5px 15px; border-bottom: solid 1px #4285F4; float: left; line-height: 40px;"   href="/dashboards/Looker_Demo_retail_block_model::item_affinity_analysis_ko?Product+Level=product&Analysis+Timeframe=1+yearss&Focus+Product=&Focus+Category=&Minimum+Purchase+Frequency=%3E%3D0.005">3_제품 판매 현황</a>
 
         <a style="padding: 5px 15px; border-bottom: solid 1px #4285F4; float: left; line-height: 40px;"    href="/dashboards/Looker_Demo_call_center::agent_performance?Agent=Tonya+Koop">4_상담원 평가</a>
 
